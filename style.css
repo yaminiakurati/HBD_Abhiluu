@@ -1,0 +1,240 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+overflow:hidden;
+}
+
+/* ---------- FIRST PAGE ---------- */
+
+.hero{
+position:relative;
+width:100%;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+}
+
+.hero-img{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.45);
+backdrop-filter:blur(2px);
+}
+
+.content{
+position:relative;
+text-align:center;
+color:white;
+z-index:10;
+}
+
+.content h1{
+font-family:'Dancing Script',cursive;
+font-size:60px;
+margin-bottom:15px;
+text-shadow:2px 2px 15px black;
+}
+
+.content p{
+font-size:20px;
+margin-bottom:40px;
+}
+
+.content h3{
+margin-top:30px;
+font-weight:300;
+animation:blink 2s infinite;
+}
+
+/* ---------- GIFT ---------- */
+
+.gift{
+    position:relative;
+    width:120px;
+    height:120px;
+    margin:auto;
+    cursor:pointer;
+    animation:float 2.5s ease-in-out infinite;
+}
+
+/* Box */
+.box{
+    position:absolute;
+    bottom:0;
+    width:120px;
+    height:85px;
+    background:linear-gradient(145deg,#fffdf8,#f8ead9);
+    border-radius:15px;
+    box-shadow:
+        0 15px 30px rgba(0,0,0,.18),
+        inset 0 2px 8px rgba(255,255,255,.9);
+}
+
+/* Lid */
+.lid{
+    position:absolute;
+    top:18px;
+    width:120px;
+    height:28px;
+    background:linear-gradient(145deg,#fff,#f6e6d2);
+    border-radius:15px;
+    transition:1s;
+    transform-origin:left;
+    box-shadow:0 6px 15px rgba(0,0,0,.15);
+}
+
+/* Vertical Ribbon */
+.ribbon-v{
+    position:absolute;
+    left:53px;
+    bottom:0;
+    width:14px;
+    height:85px;
+    background:linear-gradient(#d4af37,#f8e27d,#d4af37);
+}
+
+/* Horizontal Ribbon */
+.ribbon-h{
+    position:absolute;
+    top:47px;
+    width:120px;
+    height:14px;
+    background:linear-gradient(to right,#d4af37,#ffe58a,#d4af37);
+}
+.bow{
+    position:absolute;
+    width:28px;
+    height:28px;
+    border:6px solid #d4af37;
+    border-radius:50%;
+    top:0;
+}
+
+.left{
+    left:34px;
+    transform:rotate(-35deg);
+}
+
+.right{
+    right:34px;
+    transform:rotate(35deg);
+}
+.gift:hover{
+transform:scale(1.08);
+}
+
+/* ---------- LETTER PAGE ---------- */
+/* ---------- LETTER PAGE ---------- */
+
+.letter-page{
+    display:none;
+    position:relative;
+    width:100%;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+/* Background */
+.background{
+    position:absolute;
+    inset:0;
+    background:url("../her.jpg") center/cover no-repeat;
+}
+
+/* Letter */
+
+.letter{
+    position:relative;
+    width:700px;
+    padding:60px;
+    border-radius:30px;
+
+    background:rgba(255,255,255,.25);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.5);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.18),
+        inset 0 0 15px rgba(255,255,255,.3);
+
+    text-align:center;
+    animation:fade 1.2s ease;
+}
+
+/* Heading */
+
+.letter h2{
+    font-family:'Dancing Script',cursive;
+    font-size:52px;
+    color:#ff4f81;
+    margin-bottom:25px;
+}
+
+/* Paragraph */
+
+.letter p{
+    font-size:18px;
+    line-height:2;
+    color:#444;
+    text-align:justify;
+}
+
+/* Ending */
+
+.letter h3{
+    margin-top:30px;
+    font-family:'Dancing Script',cursive;
+    font-size:40px;
+    color:#ff4f81;
+}
+
+.letter h2{
+    font-family:'Dancing Script',cursive;
+    font-size:55px;
+    color:#ff4f81;
+    margin-bottom:25px;
+}
+.letter p{
+    font-size:19px;
+    color:#555;
+    line-height:2;
+    text-align:justify;
+}
+.letter h3{
+    margin-top:35px;
+    font-family:'Dancing Script',cursive;
+    color:#ff4f81;
+    font-size:40px;
+}
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
