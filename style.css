@@ -155,9 +155,11 @@ transform:scale(1.08);
 .background{
     position:absolute;
     inset:0;
-    background:url("her.jpg"); center/cover no-repeat;
+    background-image:url("her.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
-
 /* Letter */
 
 .letter{
