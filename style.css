@@ -154,11 +154,15 @@ transform:scale(1.08);
 /* Background */
 .background{
     position:absolute;
-    inset:0;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
     background-image:url("her.jpg");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
+    z-index:-1;
 }
 /* Letter */
 
